@@ -1,0 +1,722 @@
+npm install json-server -g
+  $ json-server -p 9988 ors.json
+npm install bower
+bower init
+bower install boostrap -S
+npm install -g grunt-cli
+npm install grunt --save-dev 
+npm install grunt-contrib-jshint jshint-stylish time-grunt jit-grunt --save-dev
+npm install grunt-contrib-copy grunt-contrib-clean --save-dev
+npm install grunt-contrib-concat grunt-contrib-cssmin grunt-contrib-uglify grunt-filerev grunt-usemin --save-dev
+npm install grunt-contrib-watch grunt-contrib-connect --save-dev
+npm install -g ng-annotate
+npm install grunt-ng-annotate --save-dev
+
+
+
+{
+  "outages": [
+    {
+      "category": "current",
+      "municipality": "Chilliwack",
+      "offsince": "Jan 16, 8:16 am",
+      "on": "",
+      "crewstatus": "",
+      "arrival": "",
+      "details": "50600 block camp river rd, 11000 - 11300 block gill rd. under investigation",
+      "affected": "19",
+      "updated": "Jan 16, 9:33 am"
+    },
+    {
+      "category": "current",
+      "municipality": "Langley",
+      "offsince": "Jan 12, 8:39 am",
+      "on": "Jan 19, 4:00 pm",
+      "crewstatus": "",
+      "arrival": "",
+      "details": "***floating day window outage*** a 4hr or less power interruption may occur one day during January 12 - 19 9300 - 9400 blk 213 street. *planned work being done on our equipment",
+      "affected": "< 5",
+      "updated": "Jan 11, 12:26 pm"
+    },
+    {
+      "category": "current",
+      "municipality": "Surrey",
+      "offsince": "Jan 16, 5:46 am",
+      "on": "",
+      "crewstatus": "",
+      "arrival": "Jan 16, 10:00 am",
+      "details": "15800 - 15900 block 20 ave. transformer burn out",
+      "affected": "12",
+      "updated": "Jan 16, 7:40 am"
+    },
+    {
+      "category": "restored",
+      "municipality": "Surrey",
+      "offsince": "Jan 16, 5:46 am",
+      "on": "Jan 17, 5:46 am",
+      "crewstatus": "",
+      "arrival": "",
+      "details": "15800 - 15900 block 20 ave. transformer burn out",
+      "affected": "12",
+      "updated": "Jan 16, 7:40 am"
+    },
+    {
+      "category": "restored",
+      "municipality": "Surrey",
+      "offsince": "Jan 16, 9:21 am",
+      "on": "Jan 16, 10:46 am",
+      "crewstatus": "",
+      "arrival": "",
+      "details": "18100 block 92 ave. under investigation",
+      "affected": "< 5",
+      "updated": "Jan 16, 9:29 am"
+    },
+    {
+      "category": "planned",
+      "municipality": "Bowen Island",
+      "offsince": "Jan 20, 9:30 am",
+      "on": "Jan 20, 6:30 pm",
+      "crewstatus": "",
+      "arrival": "",
+      "details": "pole replacement smugglers cover, howe rd, finisterre rd, eagle cliff rd, hood point rd, columbine, cove rd.. pole replacement",
+      "affected": "110",
+      "updated": "Jan 12, 6:45 am"
+    },
+    {
+      "category": "planned",
+      "municipality": "Maple Ridge",
+      "offsince": "Jan 20, 8:00 am",
+      "on": "Jan 20, 4:00 pm",
+      "crewstatus": "",
+      "arrival": "",
+      "details": "20107-20118 121 Ave; 12076-12177 201 St; 20101-20106 121A Ave. Planned work being done on our equipment",
+      "affected": "28",
+      "updated": "Jan 11, 12:24 pm"
+    }
+  ],
+  "categories": [
+    {
+      "name": "current"
+    },
+    {
+      "name": "restored"
+    },
+    {
+      "name": "planned"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "current": [
+        {
+            "municipality": "Chilliwack",
+            "offsince": "Jan 16, 8:16 am",
+            "on": "",
+            "crewstatus": "dispatched",
+            "arrival": "",
+            "crewstatus": "",
+            "details": "50600 block camp river rd, 11000 - 11300 block gill rd. under investigation",
+            "affected": "19",
+            "updated": "Jan 16, 9:33 am"
+		},
+        {
+            "municipality": "Langley",
+            "offsince": "Jan 12, 8:39 am",
+            "on": "Jan 19, 4:00 pm",
+            "crewstatus": "",
+            "arrival": "",
+            "details": "***floating day window outage*** a 4hr or less power interruption may occur one day during January 12 - 19 9300 - 9400 blk 213 street. *planned work being done on our equipment",
+            "affected": "< 5",
+            "updated": "Jan 11, 12:26 pm"
+		},
+        {
+            "municipality": "Surrey",
+            "offsince": "Jan 16, 5:46 am",
+            "on": "",
+            "crewstatus": "enroute",
+            "arrival": "Jan 16, 10:00 am",
+            "crewstatus": "",
+            "details": "15800 - 15900 block 20 ave. transformer burn out",
+            "affected": "12",
+            "updated": "Jan 16, 7:40 am"
+		}
+	],
+    "restored": [
+        {
+            "municipality": "Surrey",
+            "offsince": "Jan 16, 5:46 am",
+            "on": "Jan 17, 5:46 am",
+            "crewstatus": "",
+            "arrival": "",
+            "crewstatus": "",
+            "details": "15800 - 15900 block 20 ave. transformer burn out",
+            "affected": "12",
+            "updated": "Jan 16, 7:40 am"
+		},
+        {
+            "municipality": "Surrey",
+            "offsince": "Jan 16, 9:21 am",
+            "on": "Jan 16, 10:46 am",
+            "crewstatus": "",
+            "arrival": "",
+            "crewstatus": "",
+            "details": "18100 block 92 ave. under investigation",
+            "affected": "< 5",
+            "updated": "Jan 16, 9:29 am"
+		}
+	],
+    "planned": [
+        {
+            "municipality": "Bowen Island",
+            "offsince": "Jan 20, 9:30 am",
+            "on": "Jan 20, 6:30 pm",
+            "crewstatus": "",
+            "arrival": "",
+            "details": "pole replacement smugglers cover, howe rd, finisterre rd, eagle cliff rd, hood point rd, columbine, cove rd.. pole replacement",
+            "affected": "110",
+            "updated": "Jan 12, 6:45 am"
+		},
+        {
+            "municipality": "Maple Ridge",
+            "offsince": "Jan 20, 8:00 am",
+            "on": "Jan 20, 4:00 pm",
+            "crewstatus": "",
+            "arrival": "",
+            "details": "20107-20118 121 Ave; 12076-12177 201 St; 20101-20106 121A Ave. Planned work being done on our equipment",
+            "affected": "28",
+            "updated": "Jan 11, 12:24 pm",
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "outages": [
+        {
+            "municipality": "chilliwack",
+            "offsince": "Jan 16, 8:16 am",
+            "on": "",
+            "crewstatus": "dispatched",
+            "arrival": "",
+            "crewstatus": "",
+            "details": "50600 block camp river rd, 11000 - 11300 block gill rd. under investigation",
+            "affected": "19",
+            "updated": "Jan 16, 9:33 am"
+		},
+        {
+            "municipality": "chilliwack",
+            "offsince": "Jan 16, 9:06 am",
+            "on": "",
+            "crewstatus": "enroute",
+            "arrival": "Jan 16, 10:00 am",
+            "details": "100 - 600 block maple falls rd. under investigation",
+            "affected": "14",
+            "updated": "Jan 16, 9:12 am"
+		},
+        {
+            "municipality": "langley",
+            "offsince": "Jan 12, 8:30 am",
+            "on": "Jan 19, 4:00 pm",
+            "crewstatus": "",
+            "arrival": "",
+            "details": "***floating day window outage*** a 4hr or less power interruption may occur one day during January 12 - 19 5400 blk 201 street. *planned work being done on our equipment",
+            "affected": "< 5",
+            "updated": "Jan 11, 12:08 pm"
+		},
+        {
+            "municipality": "langley",
+            "offsince": "Jan 12, 8:30 am",
+            "on": "Jan 19, 4:00 pm",
+            "crewstatus": "",
+            "arrival": "",
+            "details": "***floating day window outage*** a 4hr or less power interruption may occur one day during January 12 - 19 20200 blk michaud crescent. *planned work being done on our equipment",
+            "affected": "< 5",
+            "updated": "Jan 11, 12:13 pm"
+		},
+        {
+            "municipality": "langley",
+            "offsince": "Jan 12, 8:30 am",
+            "on": "Jan 19, 4:00 pm",
+            "crewstatus": "",
+            "arrival": "",
+            "details": "***floating day window outage*** a 4hr or less power interruption may occur one day during January 12 - 19 9300 to 9400 blk 213 street.*planned work being done on our equipment ",
+            "affected": "< 5",
+            "updated": "Jan 11, 12:19 pm"
+		},
+        {
+            "municipality": "langley",
+            "offsince": "Jan 12, 8:39 am",
+            "on": "Jan 19, 4:00 pm",
+            "crewstatus": "",
+            "arrival": "",
+            "details": "***floating day window outage*** a 4hr or less power interruption may occur one day during January 12 - 19 9300 - 9400 blk 213 street. *planned work being done on our equipment",
+            "affected": "< 5",
+            "updated": "Jan 11, 12:26 pm"
+		},
+        {
+            "municipality": "surrey",
+            "offsince": "Jan 12, 8:30 am",
+            "on": "Jan 19, 4:00 pm",
+            "crewstatus": "",
+            "arrival": "",
+            "details": "***floating day window outage*** a 4hr or less power interruption may occur one day during January 12 - 19, 2016 1200 to 1700 blk 176th street. *planned work being done on our equipment",
+            "affected": "< 5",
+            "updated": "Jan 11, 12:02 pm"
+		},
+        {
+            "municipality": "surrey",
+            "offsince": "Jan 12, 8:30 am",
+            "on": "Jan 19, 4:00 pm",
+            "crewstatus": "",
+            "arrival": "",
+            "details": "***floating day window outage*** a 4hr or less power interruption may occur one day during January 12 - 19 2016 1700 and 1800 blk 176 street.*other ",
+            "affected": "< 5",
+            "updated": "Jan 11, 11:36 am"
+		},
+        {
+            "municipality": "surrey",
+            "offsince": "Jan 12, 8:30 am",
+            "on": "Jan 19, 4:00 pm",
+            "crewstatus": "",
+            "arrival": "",
+            "details": "***floating day window outage*** a 4hr or less power interruption may occur one day during January 12 - 19 1200 to 1700 blk 176th street. *planned work being done on our equipment",
+            "affected": "< 5",
+            "updated": "Jan 11, 12:01 pm"
+		},
+        {
+            "municipality": "surrey",
+            "offsince": "Jan 16, 5:46 am",
+            "on": "",
+            "crewstatus": "enroute",
+            "arrival": "Jan 16, 10:00 am",
+            "crewstatus": "",
+            "details": "15800 - 15900 block 20 ave. transformer burn out",
+            "affected": "12",
+            "updated": "Jan 16, 7:40 am"
+		},
+        {
+            "municipality": "surrey",
+            "offsince": "Jan 16, 9:21 am",
+            "on": "",
+            "crewstatus": "dispatched",
+            "arrival": "Jan 16, 10:30 am",
+            "crewstatus": "",
+            "details": "18100 block 92 ave. under investigation",
+            "affected": "< 5",
+            "updated": "Jan 16, 9:29 am"
+		}
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"municipality": "bowen island
+"offsince": "Jan 20, 9:30 am",
+"on": "Jan 20, 6:30 pm
+"crewstatus": "",
+"arrival": "",
+"details": pole replacement
+smugglers cover, howe rd, finisterre rd, eagle cliff rd, hood point rd, columbine, cove rd.. pole replacement
+"affected": 110
+"updated": "Jan 12, 6:45 am",
+
+
+"municipality": "burnaby
+"offsince": "Jan 21, 9:00 am",
+"on": "Jan 21, 7:00 pm
+"crewstatus": "",
+"details": 4735, 4737, 4739, 4741 willingdon ave.. planned work being done on our equipment
+"affected": 6
+"updated": "Jan 13, 8:06 am",
+
+"municipality": "coquitlam",
+"offsince": "Jan 20, 8:00 am",
+"on": "Jan 20, 4:30 pm
+"crewstatus": "",
+"details": 1625, 1629, 1641 , 1651 booth ave. planned work being done on our equipment
+"affected": 5
+"updated": "Jan 11, 11:08 am",
+"municipality": "maple ridge
+"offsince": "Jan 19, 8:00 am",
+"on": "Jan 19, 2:30 pm
+"crewstatus": "",
+"details": 21455, 21470, 21471, 21472,21475, 21482 ,21497 124 ave.. planned work being done on our equipment
+"affected": 7
+"updated": "Jan 11, 7:47 am",
+"municipality": "maple ridge
+"offsince": "Jan 20, 8:00 am",
+"on": "Jan 20, 4:00 pm
+"crewstatus": "",
+"details": 20107-20118 121 ave; 12076-12177 201 st; 20101-20106 121a ave. planned work being done on our equipment
+"affected": 28
+"updated": "Jan 11, 12:24 pm
+"municipality": "maple ridge
+"offsince": "Jan 19, 8:00 am",
+"on": "Jan 19, 4:30 pm
+"crewstatus": "",
+"details": 20150-20184 123 ave; 12187-12310 201 st; 20161 e 123a ave; 20102-20115 telep ave. planned work being done on our equipment
+"affected": 28
+"updated": "Jan 11, 2:02 pm
+"municipality": "maple ridge
+"offsince": "Jan 21, 8:00 am",
+"on": "Jan 21, 2:30 pm
+"crewstatus": "",
+"details": 14244, 14276 14300, 14308 silver valley rd.. planned work being done on our equipment
+"affected": 6
+"updated": "Jan 12, 12:46 pm
+"municipality": "maple ridge
+"offsince": "Jan 21, 8:00 am",
+"on": "Jan 21, 4:00 pm
+"crewstatus": "",
+"details": 12050-12071 201 st; 20101-20149 120a ave; 12046-12066 201b st. planned work being done on our equipment
+"affected": 32
+"updated": "Jan 12, 6:06 pm
+"municipality": "maple ridge
+"offsince": "Jan 19, 8:00 am",
+"on": "Jan 19, 2:30 pm
+"crewstatus": "",
+"details": 13828 and 13868 silver valley rd. planned work being done on our equipment
+"affected": "< 5",
+"updated": "Jan 11, 8:14 am",
+"municipality": "maple ridge
+"offsince": "Jan 20, 8:00 am",
+"on": "Jan 20, 4:30 pm
+"crewstatus": "",
+"details": *cancelled*
+11841 222 st; 22219 , 22239 , 22153, 22245, 22289 lougheed hwy , 22234 selkirk ave.. planned work being done on our equipment
+"affected": 103
+"updated": "Jan 15, 1:35 pm
+"municipality": "mission
+"offsince": "Jan 19, 8:00 am",
+"on": "Jan 19, 4:00 pm
+"crewstatus": "",
+"details": 34961 lougheed hwy. planned work being done on our equipment
+"affected": "< 5",
+"updated": "Jan 12, 1:29 pm
+"municipality": "port coquitlam",
+"offsince": "Jan 21, 8:00 am",
+"on": "Jan 21, 4:00 pm
+"crewstatus": "",
+"details": *cancelled*
+1750 coast meridian rd. planned work being done on our equipment
+"affected": 23
+"updated": "Jan 15, 12:09 pm
+"municipality": "richmond
+"offsince": "Jan 21, 8:30 am",
+"on": "Jan 21, 4:00 pm
+"crewstatus": "",
+"details": 3500 shuswap avenu. planned work being done on our equipment
+"affected": "< 5",
+"updated": "Jan 15, 9:37 am",
+"municipality": "richmond
+"offsince": "Jan 18, 8:30 am",
+"on": "Jan 18, 4:00 pm
+"crewstatus": "",
+"details": 10420 reynolds drive. planned work being done on our equipment
+"affected": "< 5",
+"updated": "Jan 15, 9:04 am",
+"municipality": "richmond
+"offsince": "Jan 21, 8:30 am",
+"on": "Jan 21, 5:30 pm
+"crewstatus": "",
+"details": 9051 blundell road. planned work being done on our equipment
+"affected": 13
+"updated": "Jan 11, 3:05 pm
+"municipality": "richmond
+"offsince": "Jan 23, 8:30 am",
+"on": "Jan 24, 5:30 pm
+"crewstatus": "",
+"details": continuous outage "January 23 & 24, 2016 rescheduled from "January 9 & 10, 2016
+3751 and 3851 shell road. planned work being done on our equipment
+"affected": "< 5",
+"updated": "Jan 6, 10:07 am",
+"municipality": "richmond
+"offsince": "Jan 22, 8:30 am",
+"on": "Jan 22, 5:00 pm
+"crewstatus": "",
+"details": 13071-13111 vanier pl. planned work being done on our equipment
+"affected": 7
+"updated": "Jan 15, 10:11 am",
+"municipality": "sechelt
+"offsince": "Jan 21, 9:30 am",
+"on": "Jan 21, 3:30 pm
+"crewstatus": "",
+"details": 3283-3324 kraus rd; 1214-1240 lysander rd, roberts creek. planned work being done on our equipment
+"affected": 17
+"updated": "Jan 13, 10:26 am",
+"municipality": "sechelt
+"offsince": "Jan 22, 9:30 am",
+"on": "Jan 22, 3:30 pm
+"crewstatus": "",
+"details": 1282,1288 lysander rd; 1299-1311 oles pl; 3333-3401 richards rd, roberts creek. planned work being done on our equipment
+"affected": 24
+"updated": "Jan 15, 9:06 am",
+"municipality": "sechelt
+"offsince": "Jan 20, 9:30 am",
+"on": "Jan 20, 3:30 pm
+"crewstatus": "",
+"details": 3320-3371 spruce rd, roberts creek. planned work being done on our equipment
+"affected": 12
+"updated": "Jan 13, 9:17 am",
+"municipality": "surrey
+"offsince": "Jan 21, 12:01 am",
+"on": "Jan 21, 4:00 am",
+"crewstatus": "",
+"details": planned work being done on our substation
+56th ave at 184 st to 50th ave at 176a street, cloverdale. planned work being done on our equipment
+"affected": 97
+"updated": "Jan 12, 2:03 pm
+"municipality": "surrey
+"offsince": "Jan 27, 10:00 am",
+"on": "Jan 27, 6:00 pm
+"crewstatus": "",
+"details": 6203 e greenside dr, surrey and surrounding. planned work being done on our equipment
+"affected": 61
+"updated": "Jan 15, 1:16 pm
+"municipality": "surrey
+"offsince": "Jan 23, 8:30 am",
+"on": "Jan 23, 4:30 pm
+"crewstatus": "",
+"details": 15945 96th ave. pole replacement
+"affected": "< 5",
+"updated": "Jan 15, 3:25 pm
+"municipality": "surrey
+"offsince": "Jan 18, 8:30 am",
+"on": "Jan 22, 4:00 pm
+"crewstatus": "",
+"details": **5 day floating outage window** a 4 hour or less power interruption may occur one day during "January 18 - 22
+13958 80 avenue. planned work being done on our equipment
+"affected": "< 5",
+"updated": "Jan 15, 9:23 am",
+"municipality": "surrey
+"offsince": "Jan 20, 12:01 am",
+"on": "Jan 20, 4:00 am",
+"crewstatus": "",
+"details": planned work being done on our substation.
+56th ave at 176a st to 60th ave at 176th street, cloverdale. planned work being done on our equipment
+"affected": 449
+"updated": "Jan 12, 2:02 pm
+"municipality": "surrey
+"offsince": "Jan 20, 10:00 am",
+"on": "Jan 20, 5:00 pm
+"crewstatus": "",
+"details": 10600 blk and 10700 blk 14a street. pole replacement
+"affected": 25
+"updated": "Jan 11, 10:12 am",
+"municipality": "surrey
+"offsince": "Jan 17, 8:30 am",
+"on": "Jan 17, 4:00 pm
+"crewstatus": "",
+"details": pacific weight scale at 176th st. planned work being done on our equipment
+"affected": "< 5",
+"updated": "Jan 13, 2:06 pm
+"municipality": "surrey
+"offsince": "Jan 17, 8:00 am",
+"on": "Jan 17, 6:00 pm
+"crewstatus": "",
+"details": *cancelled* wo 1483543
+1589-1685 136th street, and 13600 16th ave, surrey. work being done on our equipment
+"affected": 8
+"updated": "Jan 13, 1:44 pm
+"municipality": "surrey
+"offsince": "Jan 18, 8:30 am",
+"on": "Jan 22, 4:00 pm
+"crewstatus": "",
+"details": **floating day window outage** a 4 hour or less power interruption may occur one day during "January 18 - 22
+14900 blk 68a avenue and 68 avenue. planned work being done on our equipment
+"affected": "< 5",
+"updated": "Jan 15, 9:09 am",
+"municipality": "surrey
+"offsince": "Jan 19, 8:30 am",
+"on": "Jan 19, 3:00 pm
+"crewstatus": "",
+"details": 12130 nordel way. planned work being done on our equipment
+"affected": "< 5",
+"updated": dec 29, 1:18 pm
+"municipality": "surrey
+"offsince": "Jan 19, 8:00 am",
+"on": "Jan 19, 6:00 pm
+"crewstatus": "",
+"details": 2934 176 street. planned work being done on our equipment
+"affected": "< 5",
+"updated": dec 23, 3:27 pm
+"municipality": "surrey
+"offsince": "Jan 18, 8:00 am",
+"on": "Jan 18, 6:00 pm
+"crewstatus": "",
+"details": 15 ave, 16 ave, 130 st, 131 st, 132 st, 132b st, 14a ave, am",ble greene dr, summerhill cres, summerhill grove, summerhill pl, and summerhill crt. other
+"affected": 253
+"updated": dec 23, 3:27 pm
+"municipality": "tsawwassen
+"offsince": "Jan 20, 8:30 am",
+"on": "Jan 20, 5:00 pm
+"crewstatus": "",
+"details": 1100 blk fairway view wynd. planned work being done on our equipment
+"affected": 25
+"updated": "Jan 11, 9:17 am",
+"municipality": "vancouver
+"offsince": "Jan 17, 9:00 am",
+"on": "Jan 17, 6:00 pm
+"crewstatus": "",
+"details": **cancelled due to weather**
+245 e 2nd ave. pole replacement
+"affected": "< 5",
+"updated": "Jan 15, 8:55 am",
+"municipality": "vancouver
+"offsince": "Jan 20, 8:30 am",
+"on": "Jan 20, 5:00 pm
+"crewstatus": "",
+"details": 910 w 6th ave.. planned work being done on our equipment
+"affected": "< 5",
+"updated": "Jan 11, 1:50 pm
+"municipality": "vancouver
+"offsince": "Jan 20, 8:30 am",
+"on": "Jan 20, 3:00 pm
+"crewstatus": "",
+"details": 275 w 23rd ave.. planned work being done on our equipment
+"affected": 24
+"updated": "Jan 14, 2:54 pm
+"municipality": "vancouver
+"offsince": "Jan 26, 9:00 am",
+"on": "Jan 26, 8:00 pm
+"crewstatus": "",
+"details": *rescheduled from dec 9th*
+3411-3421 napier st; 950 cassiar st. pole replacement
+"affected": "< 5",
+"updated": "Jan 15, 2:16 pm
+"municipality": "vancouver
+"offsince": "Jan 22, 9:00 am",
+"on": "Jan 22, 12:00 pm
+"crewstatus": "",
+"details": 2211, 2207, 2315-17, 2285 cam",bie st.. planned work being done on our equipment
+"affected": 22
+"updated": "Jan 15, 7:59 am",
+"municipality": "vancouver
+"offsince": "Jan 23, 9:30 am",
+"on": "Jan 23, 6:00 pm
+"crewstatus": "",
+"details": 790 terminal ave. planned work being done on our equipment
+"affected": "< 5",
+"updated": "Jan 15, 1:02 pm
+"municipality": "vancouver
+"offsince": "Jan 20, 9:00 am",
+"on": "Jan 20, 4:00 pm
+"crewstatus": "",
+"details": 3145 w. broadway. planned work being done on our equipment
+"affected": 8
+"updated": "Jan 12, 8:31 am",
+"municipality": "vancouver
+"offsince": "Jan 23, 8:00 am",
+"on": "Jan 23, 6:00 pm
+"crewstatus": "",
+"details": 620-675 clark dr, 1222-1270 frances st, 1217-1325 e georgia st. planned work being done on our equipment
+"affected": 29
+"updated": "Jan 15, 1:25 pm
+"municipality": "vancouver
+"offsince": "Jan 23, 8:30 am",
+"on": "Jan 23, 4:30 pm
+"crewstatus": "",
+"details": outage required for pole replacement
+3108-3292 w 16th ave, 3107-3192 w 18th ave, 3121-3191 w 19th ave, 3216-3488 puget dr, 3400 and 3439 balaclava st, 3215-3387 trutch st. pole replacement
+"affected": 52
+"updated": "Jan 12, 2:54 pm
+"municipality": "vancouver
+"offsince": "Jan 21, 9:00 am",
+"on": "Jan 21, 7:00 pm
+"crewstatus": "",
+"details": *rescheduled from "Jan 7, 2016*
+3028 w 49th ave; 2870 sw marine dr. pole replacement
+"affected": "< 5",
+"updated": "Jan 12, 4:17 pm
+"municipality": "vancouver
+"offsince": "Jan 19, 9:00 am",
+"on": "Jan 19, 2:00 pm
+"crewstatus": "",
+"details": 3300 blk vanness (near joyce). planned work being done on our equipment
+"affected": 66
+"updated": "Jan 11, 7:48 am",
+"municipality": "vancouver
+"offsince": "Jan 19, 9:00 am",
+"on": "Jan 19, 4:00 pm
+"crewstatus": "",
+"details": 1066 w. 13th ave, 1075 w, 14th ave, 2930 spruce st. pole replacement
+"affected": "< 5",
+"updated": "Jan 6, 2:56 pm
+"municipality": "vancouver
+"offsince": "Jan 18, 9:30 am",
+"on": "Jan 18, 4:30 pm
+"crewstatus": "",
+"details": 300 blk union street, plus intersection of union and gore. pole replacement
+"affected": 7
+"updated": "Jan 6, 2:24 pm
+"municipality": "vancouver
+"offsince": "Jan 21, 9:00 am",
+"on": "Jan 21, 4:00 pm
+"crewstatus": "",
+"details": 919 and 941 w 13th ave. planned work being done on our equipment
+"affected": 78
+"updated": "Jan 14, 7:32 am",
+"municipality": "vancouver
+"offsince": "Jan 22, 9:00 am",
+"on": "Jan 22, 5:00 pm
+"crewstatus": "",
+"details": 1770 w 12th ave. and 1777 w 13th ave.. planned work being done on our equipment
+"affected": 58
+"updated": "Jan 15, 9:31 am",
+
+
+MUNICIPALITY Maple Ridge
+OFF SINCE Jan 20, 8:00 AM
+ON (EST.) Jan 20, 4:00 PM
+DETAILS20107-20118 121 Ave; 12076-12177 201 St; 20101-20106 121A Ave. Planned work being done on our equipment
+CUSTOMERS AFFECTED 28
+LAST UPDATED Jan 11, 12:24 PM
