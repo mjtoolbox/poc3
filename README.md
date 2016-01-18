@@ -7,6 +7,27 @@ A simple demo web application built with AngularJS, Bootstrap, Grunt, Bower, Jas
   * [Git](https://git-scm.com/downloads)
   * [Brackets](http://brackets.io/) or any Editor that you are comfortable with.
 
+## Proxy Configuration
+  * Git
+```bash
+$ git config --global http.proxy http://{yourID}:{your_password}@ProxyServer:8080
+$ git config --global https.proxy https://{yourID}:{your_password}@ProxyServer:8080
+```
+
+  * npm
+```bash
+npm config set proxy 'http://{yourID}:{your_password}@ProxyServer:8080'
+npm config set strict-ssl false
+```
+
+  * Bower - .bowerrc file to add configuration
+```json
+{
+"proxy":"http://{yourID}:{your_password}@ProxyServer:8080",
+"https-proxy":"http://{yourID}:{your_password}@ProxyServer:8080"
+}
+```
+
 ## Install
 Install JSON server
 ```bash
@@ -37,7 +58,13 @@ Initialize Bower on a new project. [Resource](http://weaintplastic.github.io/web
 $ bower init
 ```
 
-Now add dependent packages -  angular, bootstrap, font-awesome, angular-ui-router, angular-resource, angular-mocks
+Now add dependent packages -  angular, bootstrap, font-awesome, angular-ui-router, angular-resource, angular-mocks. You can concatenate all the dependencies in a single line.
+
+```bash
+$ bower install boostrap font-awesome angular-ui-router angular-resource angular-mocks -S
+```
+OR
+
 ```bash
 $ bower install angular -S
 ```
