@@ -42,7 +42,7 @@ angular.module('poc3', ['ui.router', 'ngResource'])
                     controller: 'ContactController'
                 }
             }
-        })
+        });
 
 
         $urlRouterProvider.otherwise('/');
