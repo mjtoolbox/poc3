@@ -1,0 +1,35 @@
+{
+  "name": "poc3",
+  "version": "1.0.0",
+  "description": "Proof of Concept 3",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "poc",
+    "proof",
+    "of",
+    "concept"
+  ],
+  "authors": [
+    "Michael Jo"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.4.0",
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "angular-resource": "~1.4.8",
+    "angular-mocks": "~1.4.8"
+  },
+  "private": true
+}

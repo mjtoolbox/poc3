@@ -1,0 +1,44 @@
+<div class="container" ng-controller="OutageController">
+    <div class="row row-content">
+        <div class="col-xs-12 col-sm-12">
+            <h1 align=center>Outage List</h1>
+        </div>
+
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-xs-12" ng-if="!showMenu">
+                    <h3>{{message}}</h3>
+                </div>
+                <div class="col-xs-12" ng-if="showMenu">
+                    <button ng-click="toggleDetails()" class="btn btn-xs btn-primary pull-right" type="button">
+                        {{showDetails ? 'Hide Details':'Show Details'}}
+                    </button>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" ng-class="{active:isSelected(1)}">
+                            <a ng-click="select(1)" aria-controls="Current" role="tab">Current</a></li>
+                        <li role="presentation" ng-class="{active:isSelected(2)}">
+                            <a ng-click="select(2)" aria-controls="Restored" role="tab">Restored</a></li>
+                        <li role="presentation" ng-class="{active:isSelected(3)}">
+                            <a ng-click="select(3)" aria-controls="Planned" role="tab">Planned</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <ul class="media-list tab-pane fade in active">
+                            <li class="media" ng-repeat="outage in outages| filter:filtText">
+                                <div class="media-left media-middle">
+
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">{{outage.municipality}}
+                         <span class="label label-danger">{{outage.affected}}</span>
+                         <span class="badge">{{outage.on | date: 'medium'}}</span></h4>
+                                    <p ng-show="showDetails">{{outage.details}}</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
